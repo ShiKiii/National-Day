@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>国庆</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+	</head>
+	<body>
+		<audio loop src="images/audio.mp3" id="audio" autoplay preload="auto"></audio>
+
+		<div class="rotate bg"></div>
+
+		<div class="music"><img class="music-img ro" src="images/music.png"><div class="music-p"><img src="images/music.gif"></div></div>
+		<div id="container">
+			<div class="page page-1  page-current">
+				<img src="./images/a2.png" class="ani resize fadeIn first" style="width: 100%; height: 70%; ;left: 0; top: 0; z-index: 2;"/>
+				<img src="images/a1.png" class="ani resize rollIn two" style="width: 100%; height: 70%; top: 50px; ;z-index: 1" />
+				<img src="images/a3.png" class="ani resize fadeInLeft three" style="width: 100%; height: 70%; left: 0;bottom: 0;z-index: 2" />
+			</div>
+			<div class="page page-2 hide">
+				<img src="images/b1.png" class="ani resize fadeIn first" style="width: 100%; height: 100%; ;z-index: 1" />
+				<img src="./images/b2.png" class="ani resize fadeInRight two" style="width: 100%; height: 100%; ;left: 0; top: 0; z-index: 2;"/>
+				<img src="images/b3.png" class="ani resize fadeInLeft three" style="width: 100%; height: 100%; left: 0;bottom: 0;z-index: 2" />
+			</div>
+			<div class="page page-3 hide">
+				<img src="images/c1.png" class="ani resize fadeIn first" style="width: 100%; height: 60%; ;z-index: 3" />
+				<img src="./images/b3.png" class="ani resize rotateInUpLeft two" style="width: 100%; height: 100%;left: 0; top: -155px; z-index: 9;"/>
+				<img src="images/c3.png" class="ani resize rotateInUpRight three" style="width: 100%; height: 100%; left: 0;bottom: 0;z-index: 2" />
+			</div>
+			<div class="page page-4 hide">
+				<img src="images/d1.png" class="ani resize rotateIn two" style="width: 100%; height: 100%;z-index: 2;"/>
+				<img src="images/d2.png" class="ani resize flip first" style="width: 100%;height: 100%;z-index: 2;"/>
+				<img src="images/d3.png" class="ani resize rotateIn two" style="width: 100%; height: 100%;z-index: 2;"/>
+				<img src="images/d4.png" class="ani resize flip first" style="width: 100%;height: 100%;z-index: 2;"/>
+				<img src="images/d5.png" class="ani resize rotateIn two" style="width: 100%; height: 100%;z-index: 2;"/>
+			</div>
+		</div>
+
+		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
